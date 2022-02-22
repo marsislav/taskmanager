@@ -10,5 +10,8 @@ class TodosController extends Controller {
     public function show ($todoId) {
         return view('todos.show')->with('todo', Todo::find($todoId));
     }
+    public function create ($todoId) {
+        return view ('todos.create');
+    }
 
 }
